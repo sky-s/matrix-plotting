@@ -1,6 +1,6 @@
 function h = linem(varargin)
-% linem  Line using single 2 x n (or 3 x n) matrix as input instead of x, y,
-% (and z) vectors. linem(M) is equivalent to line(M(1,:),M(2,:)) or
+% LINEM  Line using single 2 x n (or 3 x n) matrix as input instead of x, y,
+% (and z) vectors. LINEM(M) is equivalent to line(M(1,:),M(2,:)) or
 % line(M(1,:),M(2,:),M(3,:)).
 % 
 %   Scalars and row vectors (including handles, Name/Value pairs, etc.) are
