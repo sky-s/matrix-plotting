@@ -26,6 +26,9 @@ function h = plotm(varargin)
 % 
 %   See also plot, plot3, line, linem, transpose.
 
+%   Copyright 2017 Sky Sartorius
+%   Contact: www.mathworks.com/matlabcentral/fileexchange/authors/101715
+
 nDims = NaN;
 
 for i = numel(varargin):-1:1

@@ -11,6 +11,9 @@ function h = linem(varargin)
 % 
 %   See also plot, plot3, line, plotm, transpose.
 
+%   Copyright 2017 Sky Sartorius
+%   Contact: www.mathworks.com/matlabcentral/fileexchange/authors/101715
+
 for i = numel(varargin):-1:1
     M = varargin{i};
     if size(M,1) >= 2
