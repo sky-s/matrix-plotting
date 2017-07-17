@@ -4,7 +4,7 @@ function h = plotm(varargin)
 %   
 %   PLOTM was created so you can stop doing things like this:
 % 
-%     plot(M(1,:),M(2,:)) or plot3(M(1,:),M(2,:),M(3,:)).
+%     plot(M(1,:),M(2,:)) or plot3(M(1,:),M(2,:),M(3,:))
 % 
 %   and start doing things like this:
 % 
@@ -39,7 +39,7 @@ for i = numel(varargin):-1:1
             error('Input must have no more than 3 rows.')
         end
         M = mat2cell(M,ones(nDims,1));
-        varargin = [varargin(1:i-1) {M{:}} varargin(i+1:end)];
+        varargin = [varargin(1:i-1) {M{:}} varargin(i+1:end)]; %#ok<CCAT1>
     end
 end
 

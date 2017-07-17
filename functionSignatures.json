@@ -1,0 +1,48 @@
+{
+"plotm":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"M", "kind":"required", "type":[["numeric"], ["DimVar"]]},
+				[
+					{"name":"M", "kind":"required", "type":[["numeric"], ["DimVar"]]},
+					{"name":"LineSpec", "kind":"required", "type":"@(x) ~isempty(regexp(x, '^(-|--|:|-.|square|diamond|pentagram|hexagram|[\\+o\\*\\.xsd^v<>phrgbcmykw]+)$', 'once'))"}
+				],
+				{"multiplicity":"append", "tuple":
+					[
+						{"name":"M", "type":[["numeric"], ["DimVar"]]}
+					]
+				},
+				{"multiplicity":"append", "tuple":
+					[
+						{"name":"M", "type":[["numeric"], ["DimVar"]]},
+						{"name":"LineSpec", "type":"@(x) ~isempty(regexp(x, '^(-|--|:|-.|square|diamond|pentagram|hexagram|[\\+o\\*\\.xsd^v<>phrgbcmykw]+)$', 'once'))"}
+					]
+				}
+					
+			]
+		},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Line"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Line"}
+	]
+},
+"linem":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"M", "kind":"required", "type":[["numeric"], ["DimVar"]]},
+		{"name":"opts", "kind":"varargin", "type":"matlab.graphics.chart.primitive.Line"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.chart.primitive.Line"}
+	]
+}
+}
